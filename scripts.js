@@ -9,12 +9,16 @@ $(".page-links").hover(function(e) {
 })
 
 $(".page-links").click(function(e) {
-	console.log("test")
-	var rightList = ["417px","208px","0px"]
-	var widthList = ["209.3px","210.3px","209.3px"]
+	var rightListNav = ["417px","208px","0px"]
+	var widthListNav = ["209.3px","210.3px","209.3px"]
 	var destIdx = $(this).attr("index")
 	$(".nav-highlight").stop(true).animate({
-		right: rightList[destIdx],
-		width: widthList[destIdx]
+		right: rightListNav[destIdx],
+		width: widthListNav[destIdx]
+	}, 200, function() {})
+
+	var rightListContent = ["-200%", "-100%", "0%"]
+	$(".content").stop(true).animate({
+		right: rightListContent[destIdx]
 	}, 200, function() {})
 })

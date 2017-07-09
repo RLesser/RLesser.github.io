@@ -6,6 +6,7 @@ body {
 	font-family: 'Nunito Sans', sans-serif;
 	width: 800px;
 	margin: 0px calc((100% - 800px)/2);
+	overflow-x: hidden;
 }
 
 /* header */
@@ -67,5 +68,35 @@ body {
 	border: 1px solid black;
 }
 
+/* content */
 
+.content {
+	position: absolute;
+	right: -100%;
+	width: 300%;
+	height: 800px;
+}
+
+.page {
+	float: left;
+	margin: 0% 6.25%;
+	width: 800px;
+	height: 800px;
+}
+
+.last {
+	margin-right: 0%;
+}
+
+#projects {
+	background-color: pink;
+}
+
+#about {
+	background-color: orange;
+}
+
+#resume {
+	background-color: lightgreen;
+}
 
