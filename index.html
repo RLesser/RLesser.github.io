@@ -3,22 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Personal Site of Robert Lesser</title>
-	<link rel="stylesheet" href="styles.css">
-	<script type="text/javascript" src="scripts.js"></script>
+
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	<div class="header">
 		<div class="profile-pic"></div>
-		<div class="name"><h1>Robert Lesser</h1></div>
-		<div class="page-links">projects</div>
-		<div class="page-links">about me</div>
-		<div class="page-links">resume</div>
+		<div class="name">
+			<h1>Robert Lesser</h1>
+			<div class="nav-highlight"></div>
+		</div>
+		<div index="0" class="page-links">projects</div>
+		<div index="1" class="page-links">about me</div>
+		<div index="2" class="page-links">resume</div>
 	</div>
 	<div class="content">
 		<div id="projects" class="movable page">projects</div>
 		<div id="about" class="movable page">about me</div>
 		<div id="resume" class="movable page">resume</div>
 	</div>
+	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
