@@ -9,7 +9,6 @@ body {
 }
 
 .header {
-	background-color: lightgreen;
 	width: 100%;
 	height: 200px;	
 }
@@ -40,9 +39,14 @@ body {
 
 .page-links {
 	float: left;
-	background-color: lightpink;
-	width: 208.3px;
-	height: 50px;
+	background-color: lightgray;
+	text-align: center;
+	line-height: 48px;
+	font-size: 19px; 
+	width: 207.3px;
+	height: 48px;
+	border: 1px dashed black;
 	margin-top: 12.5px;
+	margin-left: -1px; 
 }
 
