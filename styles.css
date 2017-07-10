@@ -78,14 +78,22 @@ body {
 }
 
 .page {
-	float: left;
-	margin: 0% 6.25%;
 	width: 800px;
 	height: 800px;
 }
 
-.last {
-	margin-right: 0%;
+.first.page {
+	float: left;
+	margin-left: calc((33.33% - 800px)/2);
+}
+
+.middle.page {
+	margin: 0 auto;
+}
+
+.last.page {
+	float: right;
+	margin-right: calc((33.33% - 800px)/2);
 }
 
 #projects {
