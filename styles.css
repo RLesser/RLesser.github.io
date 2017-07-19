@@ -78,8 +78,13 @@ body {
 }
 
 .page {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 800px;
 	height: 800px;
+	/*padding: 25px;*/
+
 }
 
 .first.page {
@@ -97,14 +102,14 @@ body {
 }
 
 #projects {
-	background-color: pink;
+	background-color: white;
 }
 
 #about {
-	background-color: orange;
+	background-color: white;
 }
 
 #resume {
-	background-color: lightgreen;
+	background-color: white;
 }
 
