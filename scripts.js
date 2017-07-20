@@ -1,10 +1,20 @@
-$(".page-links").hover(function(e) {
-	$(this).next().css("border-left", "1px solid black")
-	$(this).css("border-left", "1px solid black")
+$(".box-row").hover(function(e) {
+	if ($(this).css("float") == "left") {
+		var borderSide = "border-left"
+	} else if ($(this).css("float") == "right") {
+		var borderSide = "border-right"
+	}
+	$(this).next().css(borderSide, "1px solid black")
+	$(this).css(borderSide, "1px solid black")
 	// $(this).prev().css("border-right", "1px solid black")
 }, function(e) {
-	$(this).next().css("border-left", "1px dashed black")
-	$(this).css("border-left", "1px dashed black")
+	if ($(this).css("float") == "left") {
+		var borderSide = "border-left"
+	} else if ($(this).css("float") == "right") {
+		var borderSide = "border-right"
+	}
+	$(this).next().css(borderSide, "1px dashed black")
+	$(this).css(borderSide, "1px dashed black")
 	// $(this).prev().css("border-right", "1px dashed black")
 })
 

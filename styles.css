@@ -40,6 +40,25 @@ body {
 	bottom: 12.5px;
 }
 
+.social-link {
+	float: right;
+	background-color: lavenderblush;
+	width: 29px;
+	height: 29px;
+	border: 1px dashed black;
+	margin: 33px 0px 0px -1px;
+}
+
+/*this might be nice*/
+/*.social-link:hover > .social-logo {
+	fill: white;
+}*/
+
+.social-logo {
+	width: 25px;
+	margin: 2px;
+}
+
 .nav-highlight {
 	position: absolute;
 	background-color: blue;
@@ -60,11 +79,10 @@ body {
 	width: 207.3px;
 	height: 48px;
 	border: 1px dashed black;
-	margin-top: 12.5px;
-	margin-left: -1px; 
+	margin: 12.5px 0px 0px -1px;
 }
 
-.page-links:hover {
+.box-row:hover {
 	border: 1px solid black;
 }
 
