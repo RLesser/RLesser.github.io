@@ -74,6 +74,7 @@ body {
 	float: left;
 	background-color: lightgray;
 	text-align: center;
+	cursor: pointer;
 	line-height: 48px;
 	font-size: 19px; 
 	width: 207.3px;
@@ -130,4 +131,44 @@ body {
 #resume {
 	background-color: white;
 }
+
+/* project page */
+
+.project-container {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 50px;
+}
+
+#ns-img {
+	background: url('img/NetworkScraper.png');
+	background-position: -241px -50px;
+	background-size: 810px;
+}
+
+#pp-img {
+	background: url('img/primecake.jpg');
+	background-position: -11px -3px;
+	background-size: 323px;
+}
+
+.project-img {
+	float: left;
+	width: 300px;
+	height: 200px;
+	border: 2px dashed black;
+	margin-right: 25px;
+}
+
+.project-title {
+	float: left;
+	width: 471px;
+}
+
+.project-desc {
+	float: left;
+	width: 471px;
+}
+
+
 
