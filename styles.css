@@ -4,16 +4,20 @@ html {
 
 body {
 	font-family: 'Nunito Sans', sans-serif;
-	width: 800px;
-	margin: 0px calc((100% - 800px)/2);
-	overflow-x: hidden;
+	font-weight: 100;
+	font-size: 18px;
+	max-width: 780px;
+	/*width: 100%;*/
+	/*margin: 0px;*/
+	width: 75%;
+	margin: auto auto auto 15%;
+	/*overflow-x: hidden;*/
 }
 
 /* header */
 
 .header {
-	width: 100%;
-	height: 200px;	
+	margin-bottom: 50px;
 }
 
 .profile-pic {
@@ -25,75 +29,45 @@ body {
 }
 
 .name {
-	position: relative;
-	float: left;
-	width: 625px;
-	height: 75px;
-	border-bottom: 2px solid lightgray;
+	font-family: 'Quicksand', sans-serif;
+	text-transform: lowercase;
+	letter-spacing: 3px;
+	font-size: 35px;
+	/*height: 75px;*/
+	/*border-bottom: 2px solid lightgray;*/
 	margin-top: 35px;
 }
 
 .name > h1 {
-	position: absolute;
-	font-size: 33px;
-	margin-bottom: -11px;
-	bottom: 12.5px;
+	margin: 0;
 }
 
-.social-link {
-	float: right;
-	background-color: lavenderblush;
-	width: 29px;
-	height: 29px;
-	border: 1px dashed black;
-	margin: 33px 0px 0px -1px;
+.links > ul {
+	list-style: none;
+	margin: 10px 0px;
+	padding: 0;
 }
 
-/*this might be nice*/
-/*.social-link:hover > .social-logo {
-	fill: white;
-}*/
-
-.social-logo {
-	width: 25px;
-	margin: 2px;
+.links > ul > li {
+	display: inline;
 }
 
-.nav-highlight {
-	position: absolute;
-	background-color: blue;
-	pointer-events: none;
-	opacity: 0.1;
-	right: 208px;
-	top: 90px;
-	width: 210.3px;
-	height: 50px;
+.links > ul > li:after {
+	content: "|";
+	margin: 0px 14px 0px 19px;
 }
 
-.page-links {
-	float: left;
-	background-color: lightgray;
-	text-align: center;
-	cursor: pointer;
-	line-height: 48px;
-	font-size: 19px; 
-	width: 207.3px;
-	height: 48px;
-	border: 1px dashed black;
-	margin: 12.5px 0px 0px -1px;
+.links > ul > li:last-child:after {
+	content: "";
+	margin: 0px 0px 0px 0px;
 }
 
-.box-row:hover {
-	border: 1px solid black;
+a, a:active, a:visited {
+	color: #485678;
 }
-
-/* content */
 
 .content {
-	position: absolute;
-	right: -100%;
-	width: 300%;
-	height: auto;
+	line-height: 33px;
 }
 
 .page {
